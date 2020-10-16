@@ -3,6 +3,7 @@ if exists('g:no_vim_conceal') || !has('conceal') || &enc != 'utf-8'
 endif
 
 " comparators
+syntax match pyOperator "=" conceal cchar=←
 syntax match pyOperator "<=" conceal cchar=≤
 syntax match pyOperator ">=" conceal cchar=≥
 syntax match pyOperator "!=" conceal cchar=≢
@@ -12,7 +13,6 @@ syntax match pyOperator "->" conceal cchar=→
 " operators
 syntax match pyOperator " / " conceal cchar=÷
 syntax match pyOperator " \* " conceal cchar=×
-syntax match pyOperator "=" conceal cchar=←
 
 " keywords
 syntax keyword pyStatement assert conceal cchar=!!
