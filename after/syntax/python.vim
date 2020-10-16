@@ -12,7 +12,7 @@ syntax match pyOperator "->" conceal cchar=→
 " operators
 syntax match pyOperator " / " conceal cchar=÷
 syntax match pyOperator " \* " conceal cchar=×
-syntax match pyOperator " = " conceal cchar=←
+syntax match pyOperator "=" conceal cchar=←
 
 " keywords
 syntax keyword pyStatement assert conceal cchar=!!
@@ -28,6 +28,9 @@ syntax keyword pyStatement None conceal cchar=∅
 syntax keyword pyStatement str conceal cchar=𝐒
 syntax keyword pyStatement list conceal cchar=ι
 syntax keyword pyStatement Callable conceal cchar=Ƒ
+
+syntax match pyOperator "'''" conceal cchar=ʻ
+syntax match pyOperator '"""' conceal cchar=ʻ
 
 hi link pyOperator Operator
 hi link pyStatement Statement
